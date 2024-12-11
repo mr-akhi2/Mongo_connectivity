@@ -31,7 +31,7 @@ app.get("/getuser", async (req, res) => {
 app.post("/user", async (req, res) => {
   let User = new user(req.body);
   let result = await User.save();
-  console.log(result);
+  // console.log(result);
   res.send(result);
 });
 
